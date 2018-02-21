@@ -8,7 +8,7 @@ class TopNavBar extends React.Component {
         return (
             <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
                 <img src={logo} className="App-logo" alt="logo" />
-                <a className="navbar-brand" id="webPageTitle">SE.lv</a>
+                <a className="navbar-brand" href="/#/" id="webPageTitle">SE.lv</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -16,7 +16,7 @@ class TopNavBar extends React.Component {
                 <div className="collapse navbar-collapse" id="navbarsExampleDefault">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <a className="nav-link" routerLink="/dashboard" href="#">Dashboard</a>
+                            <a className="nav-link" href="/#/about">About-us</a>
                         </li>
                     </ul>
                     <div className="float-left">

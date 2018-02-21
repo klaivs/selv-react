@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Router from './router.js';
 //components
 import TopNavBar from './components/topNavBar/topNavBar';
 //services
@@ -26,7 +27,7 @@ class App extends Component {
         <TopNavBar/>
         <AppMsg/>
         <div className="container">
-          
+          <Router/>
         </div>
       </div>
     );
