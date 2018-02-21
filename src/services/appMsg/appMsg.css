@@ -1,0 +1,7 @@
+#msg_div{
+    position: fixed;
+    top: 56px;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+}
