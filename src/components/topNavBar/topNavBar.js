@@ -1,7 +1,7 @@
 import React from 'react';
 import './topNavBar.css';
 import logo from '../../logo.svg';
-//import { Nav, Navbar } from 'reactstrap';
+import NavItem from './components/navItem/navItem';
 
 class TopNavBar extends React.Component {
     render() {
@@ -15,9 +15,8 @@ class TopNavBar extends React.Component {
 
                 <div className="collapse navbar-collapse" id="navbarsExampleDefault">
                     <ul className="navbar-nav mr-auto">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/#/about">About-us</a>
-                        </li>
+                        <NavItem name="Home" path="/#/"/>
+                        <NavItem name="About" path="/#/about"/>
                     </ul>
                     <div className="float-left">
                         <app-usermenu></app-usermenu>
