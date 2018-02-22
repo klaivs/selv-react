@@ -1,7 +1,9 @@
 import React from 'react';
-import './topNavBar.css';
+//components
+import NavItemList from './components/navItemList/navItemList';
+//resources
 import logo from '../../logo.svg';
-import NavItem from './components/navItem/navItem';
+import './topNavBar.css';
 
 class TopNavBar extends React.Component {
     render() {
@@ -14,10 +16,7 @@ class TopNavBar extends React.Component {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul className="navbar-nav mr-auto">
-                        <NavItem name="Home" path="/#/"/>
-                        <NavItem name="About" path="/#/about"/>
-                    </ul>
+                    <NavItemList/>
                     <div className="float-left">
                         <app-usermenu></app-usermenu>
                     </div>
