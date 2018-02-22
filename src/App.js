@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Router from './router.js';
+import Router from './scenes/router';
 //components
 import TopNavBar from './components/topNavBar/topNavBar';
 //services
