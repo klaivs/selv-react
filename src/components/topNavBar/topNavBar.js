@@ -5,8 +5,10 @@ import NavItemList from './components/navItemList/navItemList';
 import logo from '../../logo.svg';
 import './topNavBar.css';
 
+
 class TopNavBar extends React.Component {
     render() {
+        //console.log(process.env);
         return (
             <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
                 <img src={logo} className="App-logo" alt="logo" />
@@ -14,7 +16,6 @@ class TopNavBar extends React.Component {
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-
                 <div className="collapse navbar-collapse" id="navbarsExampleDefault">
                     <NavItemList/>
                     <div className="float-left">
