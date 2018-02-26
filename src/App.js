@@ -5,9 +5,14 @@ import Router from './scenes/router';
 import TopNavBar from './components/topNavBar/topNavBar';
 //services
 import AppMsg from './services/appMsg/appMsg';
-//scenes
 
 class App extends Component {
+  componentDidMount() {
+    fetch(process.env.REACT_APP_API_PATH + "user/")
+      .then(response => response.json())
+      .then(data => console.log(data));
+  }
+
   render() {
     return (
       <div>
