@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from "react-redux";
 import uuidv1 from "uuid";
-import { addArticle } from "../../redux/actions/actions";
+import { articleActions } from "../../redux/actions/articleActions";
 
 const mapDispatchToProps = dispatch => {
     return {
-        addArticle: article => dispatch(addArticle(article))
+        addArticle: article => dispatch(articleActions.addArticle(article))
     };
 };
 

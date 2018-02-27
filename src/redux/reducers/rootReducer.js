@@ -1,25 +1,15 @@
-import { ADD_ARTICLE } from "../actions/actionTypes";
+import { combineReducers } from 'redux';
 
-const initialState = {
-    navItems: [
-        {id: 1, name: "Home", path: "/#/"},
-        {id: 2,  name: "About", path: "/#/about"},
-        {id: 3,  name: "Test form", path: "/#/testForm"},
-        {id: 4,  name: "Test articles", path: "/#/testArticles"}
-    ],
-    articles: [],
+//import { authentication } from './authentication.reducer';
+//import { registration } from './registration.reducer';
+import { articles } from './articleReducer';
+import { msg } from './msgReducer';
 
-};
+const rootReducer = combineReducers({
+  //authentication,
+  //registration,
+  articles,
+  msg
+});
 
-const rootReducer = (state = initialState, action) => {
-    switch (action.type) {
-        case ADD_ARTICLE:
-            return { 
-                ...state,
-                articles: [...state.articles, action.payload]
-            };
-        default:
-            return state;
-    }
-};
 export default rootReducer;

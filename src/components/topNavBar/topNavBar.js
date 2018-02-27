@@ -1,10 +1,14 @@
 import React from 'react';
-//components
-import NavItemList from './components/navItemList/navItemList';
 //resources
 import logo from '../../logo.svg';
 import './topNavBar.css';
 
+const navItems = [
+    {id: 1,  name: "Home", path: "/#/" },
+    {id: 2, name: "About", path: "/#/about" },
+    {id: 3, name: "Test form", path: "/#/testForm" },
+    {id: 4, name: "Test articles", path: "/#/testArticles" }
+];
 
 class TopNavBar extends React.Component {
     render() {
@@ -17,7 +21,13 @@ class TopNavBar extends React.Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <NavItemList/>
+                    <ul className="navbar-nav mr-auto">
+                        {navItems.map(el => (
+                            <li className="nav-item" key={el.id}>
+                                <a className="nav-link" href={el.path}>{el.name}</a>
+                            </li>
+                        ))}
+                    </ul>
                     <div className="float-left">
                         <app-usermenu></app-usermenu>
                     </div>
