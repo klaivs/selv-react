@@ -5,6 +5,8 @@ export const msgActions = {
     error,
     clear
 };
+
+const test = {};
  
 function success(message) {
     return { type: msgConstants.SUCCESS, message };
