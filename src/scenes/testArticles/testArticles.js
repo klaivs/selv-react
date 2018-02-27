@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from "react-redux";
 
 const mapStateToProps = state => {
-    console.log(state.articles);
+    //console.log(state.articles);
     if (state.articles.items) {
         return { articles: state.articles.items };
     }

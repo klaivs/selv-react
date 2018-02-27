@@ -3,7 +3,7 @@ export const articleConstants = {
 };
 
 export const msgConstants = {
-    SUCCESS: 'ALERT_SUCCESS',
-    ERROR: 'ALERT_ERROR',
-    CLEAR: 'ALERT_CLEAR'
+    SUCCESS: 'MSG_SUCCESS',
+    ERROR: 'MSG_ERROR',
+    CLEAR: 'MSG_CLEAR'
 };

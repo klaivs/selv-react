@@ -2,10 +2,13 @@ import React from 'react';
 import { connect } from "react-redux";
 import uuidv1 from "uuid";
 import { articleActions } from "../../redux/actions/articleActions";
+import { msgActions } from "../../redux/actions/msgActions";
 
 const mapDispatchToProps = dispatch => {
     return {
-        addArticle: article => dispatch(articleActions.addArticle(article))
+        addArticle: article => dispatch(articleActions.addArticle(article)),
+        msgSuccess: message => dispatch(msgActions.success(message)),
+        msgError: message => dispatch(msgActions.error(message))
     };
 };
 
@@ -25,7 +28,11 @@ class ConnectedForm extends React.Component {
         oEvent.preventDefault();
         const { title } = this.state;
         const id = uuidv1();
+        const msg_id = uuidv1();
+        const msg_id_err = uuidv1();
         this.props.addArticle({ title, id });
+        this.props.msgSuccess({message: "Article created", id: msg_id});
+        this.props.msgError({message: "error Just for testing", id: msg_id_err});
         this.setState({ title: "" });
     }
     render() {
