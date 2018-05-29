@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+
 import Router from './scenes/router';
-//components
 import TopNavBar from './components/topNavBar/topNavBar';
-//services
-import AppMsg from './services/appMsg/appMsg';
+
+import './App.css';
 
 class App extends Component {
   componentDidMount() {
@@ -17,10 +16,10 @@ class App extends Component {
     return (
       <div>
         <TopNavBar/>
-        <AppMsg/>
         <div className="container">
           <Router/>
         </div>
+        
       </div>
     );
   }

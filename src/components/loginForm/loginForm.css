@@ -1,0 +1,73 @@
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+a.auth-facebook {
+    color: #fff!important;
+    background-color: #3d65a6;
+    border: 1px solid transparent;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 12px;
+    margin: 6px 12px;
+    cursor: default;
+}
+a.auth-facebook:hover {
+  background-color: #2D528D;
+}
+a.auth-facebook img{
+  width: 1rem;
+}
+
+a.auth-google {
+  color: #000000!important;
+  background-color: rgb(235, 235, 235);
+  border: 1px solid rgb(172, 172, 172);
+  display: block;
+  position: relative;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 6px 12px;
+  margin: 6px 12px;
+  cursor: default;
+}
+a.auth-google:hover {
+background-color: rgb(252, 252, 252);
+}
+a.auth-google img{
+width: 1rem;
+}

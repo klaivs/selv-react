@@ -1,6 +1,6 @@
 import React from 'react';
 //resources
-import logo from '../../logo.svg';
+import logo from '../../images/logo.svg';
 import './topNavBar.css';
 
 const navItems = [

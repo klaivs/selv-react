@@ -1,15 +1,11 @@
 import { combineReducers } from 'redux';
 
-//import { authentication } from './authentication.reducer';
-//import { registration } from './registration.reducer';
 import { articles } from './articleReducer';
-import { msg } from './msgReducer';
+import { reducer as toastrReducer } from 'react-redux-toastr'
 
 const rootReducer = combineReducers({
-  //authentication,
-  //registration,
-  articles,
-  msg
+  toastr: toastrReducer,
+  articles
 });
 
 export default rootReducer;
